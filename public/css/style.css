@@ -10,6 +10,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 .restaurant_title h1 {
   display: flex;
   justify-content: center;
