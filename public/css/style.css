@@ -5,9 +5,63 @@
 /*  (with @include) */
 /* Responsive */
 /* Mixin shadow */
-/* Mixin size and center */
+/* Center */
 * {
   font-family: "Roboto", sans-serif;
+}
+
+.restaurant_title h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.restaurantcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.restaurantcontainer img {
+  width: 300px;
+  height: 150px;
+}
+
+.bloc_restaurant_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.bloc_restaurant_container_txt {
+  display: flex;
+  flex-direction: column;
+}
+.bloc_restaurant_container_txt i {
+  display: flex;
+  justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.bloc_restaurant_container_txt input {
+  display: flex;
+  justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.fonctioncontainer h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choicelist {
+  display: flex;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logoheader {
@@ -15,6 +69,28 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+}
+.footer img {
+  width: 10%;
+  padding-bottom: 20px;
+}
+.footer a {
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+.desc {
+  display: flex;
+  align-items: center;
 }
 
 .location {

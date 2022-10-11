@@ -1,0 +1,35 @@
+.restaurant_title  {
+
+    h1 {
+        @include flex-center;
+    }
+
+}
+
+.restaurantcontainer {
+    @include flex-center;
+
+    img {
+    @include size_img;
+    }
+}
+
+.bloc_restaurant_container {
+    @include columndown;
+}
+
+.bloc_restaurant_container_txt {
+    @include columndown;
+
+        i {
+            display: flex;
+            justify-content: flex-end;
+            @include flex-end;
+        }
+
+        input {
+            display: flex;
+            justify-content: flex-end;
+            @include flex-end;
+        }
+}

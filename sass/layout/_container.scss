@@ -1,0 +1,14 @@
+.fonctioncontainer {
+
+    h1 {
+        @include flex-center;
+    }
+
+
+}
+
+.choicelist {
+    @include column;
+    @include flex-center;
+}
+

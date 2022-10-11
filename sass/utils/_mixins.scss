@@ -20,7 +20,7 @@
     box-shadow: 0px 3px 7px 0px rgb(0 0 0 / 47%);
     }
 
-/* Mixin size and center */ 
+/* Center */ 
 
 @mixin flex-center {
     display: flex;
@@ -28,11 +28,43 @@
     align-items: center;
 }
 
+@mixin flex-end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+
 @mixin column {
     display: flex;
     align-items: center;
 }
 
+@mixin columndown {
+    display: flex;
+    flex-direction: column;
+}
+
+// padding //
+
 @mixin paddingbottom {
     padding-bottom: 20px;
+}
+
+@mixin padding_top_big {
+    padding-top: 40px;
+}
+
+@mixin padding_top {
+    padding-top: 10px;
+}
+
+
+
+// Sizing //
+
+@mixin size_img {
+    width: 300px;
+    height: 150px;
+    
 }
