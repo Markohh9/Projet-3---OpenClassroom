@@ -104,6 +104,13 @@
 
 // Border sur les numeros de fonctionnement //
 
+@mixin borderchoice {
+    border: 2px solid $color-footer;
+    border-radius: 50px;
+    padding: 2px 20px 2px 20px;
+
+}
+
 @mixin circle_border {
     border: 2px solid $color-primary;
     background-color: $color-primary;

@@ -3,6 +3,7 @@
     h1 {
         @include flex-center;
         @include padding_top_big;
+        margin-bottom: 40px;
     }
 
     h3 {
@@ -11,9 +12,16 @@
 
 }
 
+.choice {
+    @include column;
+    @include flex-center;
+    gap: 140px;
+}
+
 .choicelist {
     @include column;
     @include flex-center;
+    @include borderchoice;
 
 
     p {
