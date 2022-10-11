@@ -33,5 +33,6 @@
 
 .buttontop {
     @include column;
-    @include flex-center
+    @include flex-center;
+    @include button-border;
 }

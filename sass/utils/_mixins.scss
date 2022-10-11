@@ -73,14 +73,14 @@
 }
 
 @mixin gap_cards {
-    margin-right: 80px;
+    margin-right: 40px;
 }
 
 // Sizing //
 
 @mixin size_img {
-    width: 300px;
-    height: 150px;
+    width: 400px;
+    height: 200px;
     
 }
 
@@ -105,7 +105,11 @@
     border-radius:50%;
     width: 30px;
     text-align: center;
-    
+
+}
+
+@mixin border_cards_img {
+    border-radius: 20px 20px 20px 20px;
 }
 
 
@@ -126,5 +130,9 @@
 @mixin text_over_position {
     position: absolute;
     margin-top: 15px;
-    margin-left: 205px;
+    margin-left: 305px;
+}
+
+@mixin button-border {
+
 }

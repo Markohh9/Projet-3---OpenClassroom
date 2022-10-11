@@ -10,9 +10,11 @@
 
 .restaurantcontainer {
     @include flex-center;
+    margin-left: 40px;
 
     img {
     @include size_img;
+    @include border_cards_img;
     }
 }
 
