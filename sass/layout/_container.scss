@@ -2,8 +2,12 @@
 
     h1 {
         @include flex-center;
+        @include padding_top_big;
     }
 
+    h3 {
+        font-weight: $medium-weight;
+    }
 
 }
 

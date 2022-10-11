@@ -2,6 +2,8 @@
 
     h1 {
         @include flex-center;
+        @include padding_top_big;
+        @include paddingbottom;  
     }
 
 }
@@ -16,7 +18,26 @@
 
 .bloc_restaurant_container {
     @include columndown;
+    @include gap_cards;
+
+    h3 {
+        font-family: $primary-font;
+    }
+
+    p{
+        font-family: $primary-font;
+        font-weight: $medium-weight;
+    }
 }
+
+.text_over {
+    font-family: $primary-font;
+    @include New;
+    @include column;
+    @include text_over_font;
+    @include text_over_position;
+}
+
 
 .bloc_restaurant_container_txt {
     @include columndown;

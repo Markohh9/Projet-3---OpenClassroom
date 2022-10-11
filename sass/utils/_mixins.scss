@@ -47,9 +47,16 @@
 
 // padding //
 
+//bottom//
 @mixin paddingbottom {
     padding-bottom: 20px;
 }
+
+@mixin padding_bottom_big {
+    padding-bottom: 40px;
+}
+
+//top//
 
 @mixin padding_top_big {
     padding-top: 40px;
@@ -65,6 +72,10 @@
     margin-right: 15px;
 }
 
+@mixin gap_cards {
+    margin-right: 80px;
+}
+
 // Sizing //
 
 @mixin size_img {
@@ -78,4 +89,32 @@
 @mixin no_style_href {
     color: inherit;
     text-decoration: inherit;
+}
+
+//
+
+@mixin text-center {
+    text-align: center;
+}
+
+// Border //
+
+@mixin New {
+    text-align: center;
+    border: 1px solid $color-tertiary;
+    border-radius: 4px;
+    padding: 7px 9px 7px 9px;
+    background-color: $color-tertiary;
+}
+
+@mixin text_over_font {
+    color: #278870;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+@mixin text_over_position {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 205px;
 }

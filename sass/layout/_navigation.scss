@@ -1,21 +1,33 @@
 .location {
     @include column;
     @include flex-center;
+    color: $color-black;
 
     i {
         @include gap_right;
+    }
+
+    p {
+        font-family: $primary-font;
+        font-weight: 600;
     }
 }
 
 .texttop {
     h1 {
     @include column;
-    @include flex-center
+    @include flex-center;
+    font-family: $primary-font;
+    font-size: $title-size; 
+    @include text-center;
+
     }
 
         h2 {
         @include column;
-        @include flex-center
+        @include flex-center;
+        font-weight: 300;
+        @include text-center;
     }
 }
 
