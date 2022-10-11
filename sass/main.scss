@@ -1,44 +1,31 @@
-/* Importation des fichiers scss */@at-root
+/* Importation des fichiers scss */
 
-/* utils */
+@import "./utils/_variables" ;
 
-@import "utils/_variables";
+@import "./utils/_mixins" ;
 
-@import "utils/_mixins";
+@import "./utils/_functions" ;
 
-@import "utils/_functions";
+@import "./utils/_placeholders" ;
 
-@import "utils/_placeholders";
+@import "./base/_typography" ;
 
+@import "./pages/_contact" ;
 
-/* base */ 
+@import "./pages/_home" ;
 
-@import "base/_typography";
+@import "./layout/_blocpages" ;
 
-/* Pages */ 
+@import "./layout/_container" ;
 
-@import "pages/_contact";
+@import "./layout/_header" ;
 
-@import "pages/_home";
+@import "./layout/_footer" ;
 
+@import "./layout/_navigation" ;
 
-/* layout */ 
+@import "./components/_buttons" ;
 
-@import "layout/_blocpages";
-
-@import "layout/_container";
-
-@import "layout/_footer";
-
-@import "layout/_header";
-
-@import "layout/_navigation";
-
-
-/* components */ 
-
-@import "components/_buttons";
-
-@import "components/_loader";
+@import "components/_loader" ;
 
 

@@ -1,0 +1,21 @@
+.location {
+    @include column;
+    @include flex-center
+}
+
+.texttop {
+    h1 {
+    @include column;
+    @include flex-center
+    }
+
+        h2 {
+        @include column;
+        @include flex-center
+    }
+}
+
+.buttontop {
+    @include column;
+    @include flex-center
+}

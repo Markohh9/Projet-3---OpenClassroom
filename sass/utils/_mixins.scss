@@ -1,2 +1,38 @@
 /*  (with @include) */
 
+/* Responsive */
+
+@mixin tablet-only {
+    @media screen and (min-width:768px){
+        @content;
+    }
+}
+
+@mixin desktop-only {
+    @media screen and (min-width:992px){
+        @content;
+    }
+}
+
+/* Mixin shadow */
+
+@mixin index-shadow {
+    box-shadow: 0px 3px 7px 0px rgb(0 0 0 / 47%);
+    }
+
+/* Mixin size and center */ 
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin column {
+    display: flex;
+    align-items: center;
+}
+
+@mixin paddingbottom {
+    padding-bottom: 20px;
+}
