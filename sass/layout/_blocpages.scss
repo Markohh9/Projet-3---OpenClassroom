@@ -2,7 +2,7 @@
 
     h1 {
         @include flex-center;
-        @include padding_top_big;
+        margin-top: 40px;
         @include paddingbottom;  
     }
 
