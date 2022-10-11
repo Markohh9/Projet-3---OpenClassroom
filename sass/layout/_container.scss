@@ -18,10 +18,19 @@
 
     p {
         @include gap_right;
+        @include circle_border;
+        @include columndown;
+        @include flex-center;
+        font-family: $primary-font;
+        color: $text-background;
     }
 
     i{
         @include gap_right;
     }
+}
+
+.decal {
+    margin-right: 10px;
 }
 

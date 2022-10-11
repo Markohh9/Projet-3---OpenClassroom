@@ -98,6 +98,16 @@
 }
 
 // Border //
+@mixin circle_border {
+    border: 2px solid $color-primary;
+    background-color: $color-primary;
+    height: 30px;
+    border-radius:50%;
+    width: 30px;
+    text-align: center;
+    
+}
+
 
 @mixin New {
     text-align: center;
