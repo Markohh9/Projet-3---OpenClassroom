@@ -2,10 +2,12 @@
     @include flex-center;
     @include columndown;
     @include padding_top_big;
+    @include background-footer;
 
     img {
         width: 10%;
-        @include paddingbottom;
+        @include reverse_color;
+        @include padding-footer;
     }
 
     a { 
@@ -16,7 +18,13 @@
 
     i {
         @include gap_right;
+        color: $text-background;
 }
+
+    p {
+        font-family: $primary-font;
+        color: $text-background;
+    }
 
 }
 

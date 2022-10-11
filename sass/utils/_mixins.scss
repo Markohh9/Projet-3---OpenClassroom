@@ -56,6 +56,10 @@
     padding-bottom: 40px;
 }
 
+@mixin padding-footer {
+    padding-bottom: 80px;
+}
+
 //top//
 
 @mixin padding_top_big {
@@ -65,6 +69,7 @@
 @mixin padding_top {
     padding-top: 10px;
 }
+
 
 // gapping //
 
@@ -97,7 +102,8 @@
     text-align: center;
 }
 
-// Border //
+// Border sur les numeros de fonctionnement //
+
 @mixin circle_border {
     border: 2px solid $color-primary;
     background-color: $color-primary;
@@ -107,6 +113,8 @@
     text-align: center;
 
 }
+
+// Encoche Nouveau sur les cards/img //
 
 @mixin border_cards_img {
     border-radius: 20px 20px 20px 20px;
@@ -133,6 +141,21 @@
     margin-left: 305px;
 }
 
+// Border sur le bouton degrade //
+
 @mixin button-border {
 
 }
+
+// couleurs inversées pour l'image du footer //
+@mixin reverse_color {
+    filter: invert(1);
+}
+
+// Background footer // 
+
+@mixin background-footer {
+    border: 40px solid $color-footer;
+    background-color: $color-footer;
+}
+
