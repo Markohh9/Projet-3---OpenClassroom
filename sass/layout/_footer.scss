@@ -11,6 +11,11 @@
     a { 
         @include paddingbottom;
         @include padding_top;
+        @include no_style_href;
+}
+
+    i {
+        @include gap_right;
 }
 
 }

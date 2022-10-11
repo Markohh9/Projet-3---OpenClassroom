@@ -10,5 +10,14 @@
 .choicelist {
     @include column;
     @include flex-center;
+
+
+    p {
+        @include gap_right;
+    }
+
+    i{
+        @include gap_right;
+    }
 }
 

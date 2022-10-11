@@ -63,6 +63,12 @@
   justify-content: center;
   align-items: center;
 }
+.choicelist p {
+  margin-right: 15px;
+}
+.choicelist i {
+  margin-right: 15px;
+}
 
 .logoheader {
   display: flex;
@@ -86,6 +92,11 @@
 .footer a {
   padding-bottom: 20px;
   padding-top: 10px;
+  color: inherit;
+  text-decoration: inherit;
+}
+.footer i {
+  margin-right: 15px;
 }
 
 .desc {
@@ -99,6 +110,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.location i {
+  margin-right: 15px;
 }
 
 .texttop h1 {

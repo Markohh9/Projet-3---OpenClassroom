@@ -1,6 +1,10 @@
 .location {
     @include column;
-    @include flex-center
+    @include flex-center;
+
+    i {
+        @include gap_right;
+    }
 }
 
 .texttop {
