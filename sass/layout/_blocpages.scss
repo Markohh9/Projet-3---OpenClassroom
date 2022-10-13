@@ -11,7 +11,7 @@
 .restaurantcontainer {
     @include flex-center;
     margin-left: 40px;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 
     a { 
         color: inherit;
@@ -75,8 +75,8 @@
             justify-content: flex-end;
             @include flex-end;
             
-        }
-
-        
+        }    
 }
+
+
 
