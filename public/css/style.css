@@ -85,6 +85,7 @@ html {
   background-color: grey;
   margin-top: -20px;
   padding-left: 15px;
+  padding-bottom: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -103,16 +104,6 @@ html {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-}
-
-.heart-empty {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 20px;
-  margin-bottom: 45px;
 }
 
 .fonctioncontainer h1 {
