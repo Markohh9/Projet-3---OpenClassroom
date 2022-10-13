@@ -9,10 +9,10 @@
         width: 10%;
         @include reverse_color;
         @include padding-footer;
+        margin-bottom: -40px;
 
         &:hover {
-        transform: scale(1.2);
-        transition-duration: 800ms;
+        @include fonction-hover;
         
         }
     }

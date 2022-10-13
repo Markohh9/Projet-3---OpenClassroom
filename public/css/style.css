@@ -223,10 +223,12 @@ html {
   width: 10%;
   filter: invert(1);
   padding-bottom: 80px;
+  margin-bottom: -40px;
 }
 .footer img:hover {
   transform: scale(1.2);
-  transition-duration: 800ms;
+  transition-duration: 2000ms;
+  cursor: pointer;
 }
 .footer a {
   padding-bottom: 20px;
