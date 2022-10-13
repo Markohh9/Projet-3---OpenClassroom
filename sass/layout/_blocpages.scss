@@ -20,7 +20,7 @@
 }
 
     a:hover {
-        @include fonction-hover;
+        @include fonction-hover-cards;
     }
 
 
@@ -59,6 +59,7 @@
 
     @include border_card_img;
     @include columndown;
+    @include shadow;
     
 
         i {

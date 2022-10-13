@@ -38,7 +38,7 @@ html {
   text-decoration: inherit;
 }
 .restaurantcontainer a:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition-duration: 2000ms;
   cursor: pointer;
 }
@@ -80,14 +80,15 @@ html {
 }
 
 .bloc_restaurant_container_txt {
-  border: 2px solid black;
+  border: 2px solid none;
   border-radius: 0px 0px 25px 25px;
-  background-color: grey;
+  background-color: white;
   margin-top: -20px;
   padding-left: 15px;
   padding-bottom: 20px;
   display: flex;
   flex-direction: column;
+  box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.47);
 }
 .bloc_restaurant_container_txt i {
   display: flex;

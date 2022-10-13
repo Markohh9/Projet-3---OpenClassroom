@@ -125,9 +125,9 @@
 }
 
 @mixin border_card_img {
-    border: 2px solid black;
+    border: 2px solid none;
     border-radius: 0px 0px 25px 25px;
-    background-color: grey;
+    background-color: white;
     margin-top: -20px;
     padding-left: 15px;
     padding-bottom: 20px;
@@ -200,6 +200,15 @@
         cursor: pointer;
 
 }
+
+@mixin fonction-hover-cards {
+
+    transform: scale(1.1);
+    transition-duration: 2000ms;
+    cursor: pointer;
+
+}
+
 
 @mixin fonction-hover-txt{
 
