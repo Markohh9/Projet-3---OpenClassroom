@@ -125,12 +125,13 @@
 }
 
 @mixin border_card_img {
-    border: 2px solid none;
+    border: 0 solid none;
     border-radius: 0px 0px 25px 25px;
     background-color: white;
     margin-top: -20px;
     padding-left: 25px;
-    padding-bottom: 20px;
+    padding-bottom: -20px;
+    height: 90px;
 }
 
 @mixin circle_border {
