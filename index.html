@@ -13,6 +13,14 @@
 
 <body>
 
+<!-- loading -->
+
+<div class="loading">
+    <src img="./src/img/load.png"></src>
+</div> 
+
+
+
 <header>
     <div class="logoheader">
         <img src="./src/img/ohmyfood.png" alt="logo_omf">
@@ -24,15 +32,19 @@
 <div class="topcontainer">
     <div class="location">
         <i class="fa-solid fa-location-dot"></i>
-        <p> Paris, Belleville</p>
+            <input class="search_input" type="search" placeholder="Paris, Belleville">
+            <div class="searchbtn">
+                <button class="rechercher" type="button"><span>Rechercher</span></button>
+            </div> 
     </div>
         <div class="texttop">
             <H1> Réservez le menu qui <br> vous convient</H1>
             <h2> Découvrez des restaurants  d'exception, <br>séléctionnés par nos soins.</h2>
         </div>
-        <div class="buttontop">
-            <button>Explorer nos restaurants</button>
-        </div>        
+        <a class="button align-button" href="#Restaurant">
+            Explorer nos restaurants  
+
+        </a>        
 </div>
 
 <!-- Fonctionnement-->
@@ -40,14 +52,17 @@
 <div class="fonctioncontainer">
     <h1> Fonctionnement</h1>
 
-            <div class="choice">
+        <div class="choice">
 
+            <div class="c1">
                 <div class="choicelist">
                     <p>1</p>
                     <i class="fa-solid fa-mobile-screen"></i>
                     <h3>Choisissez un restaurant</h3>
                 </div>
+            </div>
 
+            <div class="c2">
                     <div class="decal">
                         <div class="choicelist">
                             <p>2</p>
@@ -55,76 +70,81 @@
                             <h3>Composez votre menu</h3>        
                         </div>
                     </div>
+            </div>
+
+
+            <div class="c3"> 
                                 <div class="choicelist">
                                     <p>3</p>
                                     <i class="fa-solid fa-store"></i>
                                     <h3>Dégustez au restaurant</h3>
                                 </div>
-                                
-            </div>
+            </div>   
+
+        </div>
 </div>
 
-<!-- Restaurants section !-->
-
-<div class="restaurant_title">  
+<div id="Restaurant" class="restaurant_title">  
         <h1>Restaurants</h1>
 </div>
 
 <div class="restaurantcontainer">
 
+
+    <a href="./src/pages/pagegout.html">
     <div class="bloc_restaurant_container">
             <span class="text_over">Nouveau</span>
         <img src="./src/img/gout.jpg" alt="gout">
             <div class="bloc_restaurant_container_txt"> 
                 <h3>La palette du goût</h3>
                 <p>Ménilmontant</p>
-                    <input type="checkbox">
-                    <i class="fa-regular fa-heart heart_empty"></i>
-                    <i class="fa-solid fa-heart heart-full"></i>
             </div>
     </div>
+</a>
 
+
+        <a href="./src/pages/pagenote.html">
             <div class="bloc_restaurant_container">
                 <span class="text_over">Nouveau</span>
                 <img src="./src/img/note.jpg" alt="note">
                     <div class="bloc_restaurant_container_txt"> 
                         <h3>La note enchantée</h3>
                         <p>Charonne</p>
-                            <input type="checkbox">
-                            <i class="fa-regular fa-heart heart_empty"></i>
-                            <i class="fa-solid fa-heart heart-full"></i>
                     </div>
             </div>
+        </a>
+            
 
+                <a href="./src/pages/pagefr.html">
                     <div class="bloc_restaurant_container">
                         <span class="text_over">Nouveau</span>                        
                         <img src="./src/img/fr.jpg" alt="fr">
                             <div class="bloc_restaurant_container_txt"> 
                                 <h3>À la francaise</h3>
                                 <p>Cité Rouge</p>
-                                    <input type="checkbox">
-                                    <i class="fa-regular fa-heart heart_empty"></i>
-                                    <i class="fa-solid fa-heart heart-full"></i>
                             </div>
                     </div>
+                </a>
 
+
+                        <a href="./src/pages/pagesens.html">
                             <div class="bloc_restaurant_container">
                                     <span class="text_over">Nouveau</span>
                                 <img src="./src/img/sens.jpg" alt="sens">
                                     <div class="bloc_restaurant_container_txt"> 
                                         <h3>Le délice des sens</h3>
                                         <p>Folie-Méricourt</p>
-                                            <input type="checkbox">
-                                            <i class="fa-regular fa-heart heart_empty"></i>
-                                            <i class="fa-solid fa-heart heart-full"></i>
                                     </div>
                             </div>
+                        </a>
 </div>
+
+
 
     <footer>
 
 <div class="footer">
-    <img src="./src/img/ohmyfood.png" alt="logo_omf">
+        <img src="./src/img/ohmyfood.png" alt="logo_omf">
 
     <a href="#footer">
         <div class="desc">
@@ -139,11 +159,12 @@
             <p>Devenir partenaire</p>
         </div>
     </a>
-
-    <a href="#footer"><p>Mentions légales</p></a>
-
-    <a href="#footer"><p>Contact</p></a>
     
+        <a href="#footer"><p>Mentions légales</p></a>
+
+        <a href="#footer"><p>Contact</p></a>
+
+
 </div>
 
 

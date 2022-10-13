@@ -14,6 +14,10 @@ html {
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .restaurant_title h1 {
   display: flex;
   justify-content: center;
@@ -28,6 +32,15 @@ html {
   align-items: center;
   margin-left: 40px;
   margin-bottom: 80px;
+}
+.restaurantcontainer a {
+  color: inherit;
+  text-decoration: inherit;
+}
+.restaurantcontainer a:hover {
+  transform: scale(1.2);
+  transition-duration: 2000ms;
+  cursor: pointer;
 }
 .restaurantcontainer img {
   width: 400px;
@@ -46,6 +59,7 @@ html {
 .bloc_restaurant_container p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+  margin-top: -5px;
 }
 
 .text_over {
@@ -66,15 +80,22 @@ html {
 }
 
 .bloc_restaurant_container_txt {
+  border: 2px solid black;
+  border-radius: 0px 0px 25px 25px;
+  background-color: grey;
+  margin-top: -20px;
+  padding-left: 15px;
   display: flex;
   flex-direction: column;
 }
 .bloc_restaurant_container_txt i {
   display: flex;
   justify-content: flex-end;
+  align-items: flex-end;
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
+  margin-right: 20px;
+  margin-bottom: 45px;
 }
 .bloc_restaurant_container_txt input {
   display: flex;
@@ -82,6 +103,16 @@ html {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+}
+
+.heart-empty {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+  margin-bottom: 45px;
 }
 
 .fonctioncontainer h1 {
@@ -93,6 +124,11 @@ html {
 }
 .fonctioncontainer h3 {
   font-weight: 400;
+}
+.fonctioncontainer h3:hover {
+  transform: scale(1);
+  transition-duration: 2000ms;
+  cursor: pointer;
 }
 
 .choice {
@@ -110,7 +146,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid #353535;
+  border: 2px solid #9356DC;
   border-radius: 50px;
   padding: 2px 20px 2px 20px;
   box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.47);
@@ -131,13 +167,41 @@ html {
   font-family: "Roboto", sans-serif;
   color: white;
 }
+.choicelist p:hover {
+  transform: scale(1);
+  transition-duration: 2000ms;
+  cursor: pointer;
+}
 .choicelist i {
   margin-right: 15px;
   color: #9356DC;
 }
+.choicelist i:hover {
+  transform: scale(1);
+  transition-duration: 2000ms;
+  cursor: pointer;
+}
 
 .decal {
   margin-right: 10px;
+}
+
+.c1 :hover {
+  transform: scale(1.2);
+  transition-duration: 2000ms;
+  cursor: pointer;
+}
+
+.c2 :hover {
+  transform: scale(1.2);
+  transition-duration: 2000ms;
+  cursor: pointer;
+}
+
+.c3 :hover {
+  transform: scale(1.2);
+  transition-duration: 2000ms;
+  cursor: pointer;
 }
 
 .logoheader {
@@ -162,6 +226,10 @@ html {
   width: 10%;
   filter: invert(1);
   padding-bottom: 80px;
+}
+.footer img:hover {
+  transform: scale(1.2);
+  transition-duration: 800ms;
 }
 .footer a {
   padding-bottom: 20px;
@@ -198,6 +266,32 @@ html {
   font-family: "Roboto", sans-serif;
   font-weight: 600;
 }
+.location span {
+  font-family: "Roboto", sans-serif;
+}
+.location button {
+  border-radius: 25px;
+  padding: 10px;
+  border: 2px solid #9356DC;
+  background-color: white;
+  margin-left: 10px;
+  box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.47);
+}
+.location button:hover {
+  transform: scale(1.2);
+  transition-duration: 2000ms;
+  cursor: pointer;
+}
+.location a, .location a:hover, .location a:visited {
+  text-decoration: none;
+}
+
+.search_input {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  border: none;
+  outline: none;
+}
 
 .texttop h1 {
   display: flex;
@@ -219,12 +313,65 @@ html {
   text-align: center;
 }
 
-.buttontop {
-  display: flex;
-  align-items: center;
+.align-button {
+  color: inherit;
+  text-decoration: inherit;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+.button {
+  border-radius: 25px;
+  background-color: #9356DC;
+  display: inline-block;
+  width: 250px;
+  margin: auto;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  padding: 15px 25px 15px 25px;
+  border-radius: 50px;
+  border-style: none;
+  background: linear-gradient(175deg, #FF79DA 0%, #9356DC 100%);
+  box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.47);
+  color: black;
+  cursor: pointer;
+}
+.button:hover {
+  background: linear-gradient(175deg, #fface8 0%, #ae80e5 100%);
+  transform: scale(1.2);
+  transition-duration: 2000ms;
+  box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.22);
+}
+
+/*
+.searchbtn {
+
+        @include flex-center;
+        font-family: $primary-font;
+        @include button-border;
+
+        &:hover {
+            @include button-border-hover;
+            }
+}
+
+*/
+/* .loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10000px;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(128, 128, 128, 0.5)
+} */
 
 /*# sourceMappingURL=style.css.map */

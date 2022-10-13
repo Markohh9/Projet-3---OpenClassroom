@@ -47,6 +47,15 @@
 
 // padding //
 
+@mixin searchbutton {
+    border-radius: 25px;
+        padding: 10px;
+        border: 2px solid #9356DC;
+        background-color: white;
+        margin-left: 10px;
+
+}
+
 //bottom//
 @mixin paddingbottom {
     padding-bottom: 20px;
@@ -60,6 +69,10 @@
     padding-bottom: 80px;
 }
 
+
+@mixin c {
+    margin-top: -20px;
+}
 //top//
 
 @mixin padding_top_big {
@@ -105,10 +118,18 @@
 // Border sur les numeros de fonctionnement //
 
 @mixin borderchoice {
-    border: 2px solid $color-footer;
+    border: 2px solid $color-primary;
     border-radius: 50px;
     padding: 2px 20px 2px 20px;
 
+}
+
+@mixin border_card_img {
+    border: 2px solid black;
+    border-radius: 0px 0px 25px 25px;
+    background-color: grey;
+    margin-top: -20px;
+    padding-left: 15px;
 }
 
 @mixin circle_border {
@@ -151,6 +172,39 @@
 // Border sur le bouton degrade //
 
 @mixin button-border {
+    padding: 15px 25px 15px 25px;
+    border-radius: 50px;
+    border-style: none;
+    background: linear-gradient(175deg, $color-secondary  0%, $color-primary  100%);
+    @include index-shadow;
+    color: black;
+    cursor: pointer;
+}
+
+@mixin button-border-hover {
+        background: linear-gradient(
+            175deg,
+            lighten(rgba(255, 121, 218, 1), 10%) 0%,
+            lighten(rgba(147, 86, 220, 1), 10%) 100%
+        );
+        transform: scale(1.2);
+        transition-duration: 2000ms;
+        box-shadow: 0px 4px 10px 1px rgb(0 0 0 / 22%);
+}
+
+@mixin fonction-hover {
+
+        transform: scale(1.2);
+        transition-duration: 2000ms;
+        cursor: pointer;
+
+}
+
+@mixin fonction-hover-txt{
+
+    transform: scale(1);
+    transition-duration: 2000ms;
+    cursor: pointer;
 
 }
 
@@ -172,3 +226,7 @@
     @mixin shadow {
         box-shadow: 0px 3px 7px 0px rgb(0 0 0 / 47%);
 }
+
+// search nav //
+
+

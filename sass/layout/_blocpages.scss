@@ -13,10 +13,22 @@
     margin-left: 40px;
     margin-bottom: 80px;
 
+    a { 
+        color: inherit;
+        text-decoration: inherit;
+        
+}
+
+    a:hover {
+        @include fonction-hover;
+    }
+
+
     img {
     @include size_img;
     @include border_cards_img;
     }
+
 }
 
 .bloc_restaurant_container {
@@ -30,6 +42,7 @@
     p{
         font-family: $primary-font;
         font-weight: $medium-weight;
+        margin-top: -5px;
     }
 }
 
@@ -43,17 +56,33 @@
 
 
 .bloc_restaurant_container_txt {
+
+    @include border_card_img;
     @include columndown;
+    
 
         i {
+            @include flex-end;
             display: flex;
             justify-content: flex-end;
-            @include flex-end;
+            margin-right: 20px;
+            margin-bottom: 45px;
         }
 
         input {
             display: flex;
             justify-content: flex-end;
             @include flex-end;
+            
         }
+
+        
+}
+
+.heart-empty {
+            @include flex-end;
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 20px;
+            margin-bottom: 45px;
 }

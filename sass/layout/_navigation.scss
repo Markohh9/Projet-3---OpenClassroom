@@ -11,6 +11,31 @@
         font-family: $primary-font;
         font-weight: 600;
     }
+
+    span { 
+        font-family: $primary-font;
+    }
+
+    button {
+        @include searchbutton;
+        @include shadow;
+    }
+
+    button:hover {
+        @include fonction-hover;
+
+    }
+
+    a,a:hover,a:visited {
+        text-decoration: none;
+    }
+}
+
+.search_input {
+    font-family: $primary-font;
+    font-weight: bold;
+    border: none;
+    outline: none;
 }
 
 .texttop {
@@ -31,8 +56,17 @@
     }
 }
 
-.buttontop {
-    @include column;
+.align-button {
+    @include no_style_href;
     @include flex-center;
-    @include button-border;
+    
 }
+
+.button {
+    border-radius: 25px;
+    background-color: $color-primary;
+    display: inline-block;
+    width: 250px;
+    margin: auto;
+}
+

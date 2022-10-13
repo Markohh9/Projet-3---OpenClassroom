@@ -10,12 +10,15 @@
         font-weight: $medium-weight;
     }
 
+    h3:hover {
+        @include fonction-hover-txt;
+    }
 }
 
 .choice {
     @include column;
     @include flex-center;
-    gap: 140px;
+    gap: 140px; 
 }
 
 .choicelist {
@@ -34,13 +37,40 @@
         color: $text-background;
     }
 
+   p:hover {
+        @include fonction-hover-txt;
+    } 
+
     i{
         @include gap_right;
         color: $color-primary;
     }
+
+    i:hover {
+        @include fonction-hover-txt;
+    }
 }
+
+
 
 .decal {
     margin-right: 10px;
 }
 
+.c1 {
+    :hover {
+        @include fonction-hover;
+    }
+}
+
+.c2 {
+    :hover {
+        @include fonction-hover;
+    }
+}
+
+.c3 {
+    :hover {
+        @include fonction-hover;
+    }
+}

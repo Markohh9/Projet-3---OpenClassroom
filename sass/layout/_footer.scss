@@ -4,10 +4,17 @@
     @include padding_top_big;
     @include background-footer;
 
+
     img {
         width: 10%;
         @include reverse_color;
         @include padding-footer;
+
+        &:hover {
+        transform: scale(1.2);
+        transition-duration: 800ms;
+        
+        }
     }
 
     a { 
@@ -24,7 +31,10 @@
     p {
         font-family: $primary-font;
         color: $text-background;
+
     }
+
+    
 
 }
 

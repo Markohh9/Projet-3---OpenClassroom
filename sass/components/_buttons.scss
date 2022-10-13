@@ -1,0 +1,26 @@
+.button {
+    @include flex-center;
+    font-family: $primary-font;
+    @include button-border;
+    
+
+    &:hover {
+    @include button-border-hover;
+    }
+}
+
+
+/*
+.searchbtn {
+
+        @include flex-center;
+        font-family: $primary-font;
+        @include button-border;
+
+        &:hover {
+            @include button-border-hover;
+            }
+}
+
+*/
+
