@@ -22,14 +22,121 @@
 }
 
 
+.restaurant_container {
+    display: flex;
+    justify-content: center;
+}
 
 .white-pg {
-    display: flex;
-    border: 1px solid black;
-    background-color:whitesmoke;
-    border-radius: 50px;
-    width: 1080px;
-    height: 10000px;
+    background-color:#FAF9F6;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    width: 1440px;
+    height: 1240px;
     margin-top: -42px;
     position: absolute;
+    padding: 14px;
+
+}
+
+.section_1 {
+
+        span {
+            margin-top: -20px;
+            margin-left: 880px;
+}
+
+        span:hover {
+        @include fonction-hover;
+        @include flex-center;
+}
+
+        h1{
+        font-family: $title-font;
+        font-size: $title-size;
+        margin-right: 180px;
+        @include flex-center;
+        }
+
+        margin-bottom: 40px
+}
+
+.entrees {
+
+    @include flex-center;
+    margin-bottom: 20px;
+
+    h2 {
+        font-weight: 400;
+        border-bottom: 2px solid #99E2D0;
+    }
+}
+
+
+.sub_price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -24px;
+    }
+
+    p {
+        font-family: $primary-font;
+
+    }
+
+    h4 {
+
+    }
+
+.sub_price h3 {
+        margin-bottom: -10px;
+}
+
+
+.entrees_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 30px;
+    margin-bottom: 120px;
+
+}
+.menu {
+    background-color: white;
+    border-radius: 25px;
+    padding: 2px;
+    padding-left: 14px;
+    width: 400px;
+    @include shadow;
+    margin-right: 40px;
+    white-space: nowrap;
+
+}
+
+
+.commander_btn{
+    @include flex-center;
+}
+
+.button_commander {
+
+    color: white;
+    @include flex-center;
+    width: 200px;
+    height: 54px;
+    font-family: $primary-font;
+    @include button-border;
+    
+    &:hover {
+    @include button-border-hover;
+    }
+
+    a {
+    }
+}
+
+
+.footer_restaurant {
+    margin-top: 1200px;
 }
