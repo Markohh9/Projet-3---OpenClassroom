@@ -1,0 +1,35 @@
+.logoheader {
+
+    i { 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: black;
+    width: 25px;
+    height: 25px;
+}
+
+    a {
+        text-decoration: none;
+    }
+}
+
+
+
+.img_banner img {
+    height: 800px;
+    width: 100%;
+}
+
+
+
+.white-pg {
+    display: flex;
+    border: 1px solid black;
+    background-color:whitesmoke;
+    border-radius: 50px;
+    width: 1080px;
+    height: 10000px;
+    margin-top: -42px;
+    position: absolute;
+}
