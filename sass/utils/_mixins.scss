@@ -199,7 +199,13 @@
         transform: scale(1.2);
         transition-duration: 2000ms;
         cursor: pointer;
+}
 
+@mixin fonction-hover-arrow {
+
+    transform: scale(2);
+    transition-duration: 600ms;
+    cursor: pointer;
 }
 
 @mixin fonction-hover-cards {
@@ -252,3 +258,9 @@
 }
 
 
+// Transition square //
+
+@mixin transition-square {
+    cursor: pointer;
+
+}

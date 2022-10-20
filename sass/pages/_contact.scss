@@ -5,12 +5,18 @@
     justify-content: flex-start;
     align-items: center;
     color: black;
-    width: 25px;
-    height: 25px;
 }
+
+    a:hover {
+    @include fonction-hover-arrow;
+}
+
 
     a {
         text-decoration: none;
+    }
+
+    img {
     }
 }
 
@@ -31,19 +37,19 @@
     background-color:#FAF9F6;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
-    width: 1440px;
+    width: 100%;
     height: 1240px;
-    margin-top: -42px;
+    margin-top: -342px;
     position: absolute;
     padding: 14px;
 
 }
 
 .section_1 {
-
+    margin-left: 100px;
         span {
             margin-top: -20px;
-            margin-left: 880px;
+            margin-left: 1000px;
 }
 
         span:hover {
@@ -82,6 +88,7 @@
 
     p {
         font-family: $primary-font;
+        width: 90%;
 
     }
 
@@ -91,6 +98,7 @@
 
 .sub_price h3 {
         margin-bottom: -10px;
+        width: 100%;
 }
 
 
@@ -98,8 +106,9 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-left: 30px;
+    align-items: center;
     margin-bottom: 120px;
+    margin-left: 120px;
 
 }
 .menu {
@@ -109,10 +118,35 @@
     padding-left: 14px;
     width: 400px;
     @include shadow;
-    margin-right: 40px;
+    margin-right: 120px;
     white-space: nowrap;
-
 }
+
+// square transition //
+.menu:hover {
+    @include transition-square;
+}
+
+
+.boxchecked {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+}
+.checked {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 100%;
+    overflow: hidden;
+    margin-right: -60px;
+    background-color: rgb(153, 226, 208);
+    border-radius: 0 15px 15px 0;
+    color: white;
+}
+
 
 
 .commander_btn{
@@ -138,5 +172,5 @@
 
 
 .footer_restaurant {
-    margin-top: 1200px;
+    margin-top: 900px;
 }
