@@ -117,9 +117,10 @@
 // Border sur les numeros de fonctionnement //
 
 @mixin borderchoice {
-    border: 2px solid $color-primary;
-    border-radius: 50px;
+    border: none;
+    border-radius: 20px;
     padding: 2px 20px 2px 20px;
+    background-color: #f6f6f6;
 
 }
 
