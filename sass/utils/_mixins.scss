@@ -268,3 +268,11 @@
     cursor: pointer;
 
 }
+
+// transition //
+@mixin reset_heart {
+    margin-bottom: 0;
+    margin-left: 0;
+    top: 0;
+    right: 0;
+}

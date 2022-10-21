@@ -17,3 +17,37 @@ header {
         @include fonction-hover-arrow;
     }
 }
+
+/** Restaurants pages **/ 
+
+.banner_title_background {
+    margin-top: 250px;
+    position: relative;
+    background-color: $text-background;
+    border-radius: 50px 50px 0 0;
+}
+
+.banner_title_background p {
+    font-family: $title-font;
+    font-size: $title-size;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.banner_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.heart_restaurant span {
+    @include reset_heart;
+    margin-left: 40px;
+
+    &:hover {
+        @include fonction-hover-hearts;
+    }
+}
+
+
