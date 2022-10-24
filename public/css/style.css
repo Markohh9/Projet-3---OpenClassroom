@@ -119,6 +119,112 @@ html {
   margin-top: 48px;
 }
 
+.menu_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item_menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title_menu_section {
+  display: flex;
+  justify-content: flex-start;
+}
+.title_menu_section h2 {
+  font: "Roboto", sans-serif;
+  font-weight: 400;
+  border-bottom: 4px solid #99E2D0;
+}
+
+.item_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.item_container ol, .item_container ul {
+  list-style: none;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 300px;
+  height: 80px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.47);
+  /* opacity: 0; */
+}
+
+.item_txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 85%;
+}
+.item_txt span {
+  font-size: 20px;
+  margin: 0 0 10px 10px;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.item_txt p {
+  font-size: 16px;
+  margin-left: 10px;
+  padding-bottom: 5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.item_price {
+  display: flex;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.item_check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 100%;
+  overflow: hidden;
+  margin-right: -60px;
+  background-color: #99E2D0;
+  border-radius: 0 15px 15px 0;
+}
+.item_check i {
+  color: white;
+}
+
+.first_item {
+  animation: items-display 1.2s forwards linear;
+}
+
+.second_item {
+  animation: items-display 1.2s 0.2s forwards linear;
+}
+
+.third_item {
+  animation: items-display 1.2s 0.4s forwards linear;
+}
+
+.item_check, .item_txt, .item_price, i {
+  transition: all 0.3s;
+}
+
 .fonctioncontainer h1 {
   display: flex;
   justify-content: center;
@@ -231,6 +337,7 @@ header {
 }
 
 /** Restaurants pages **/
+/* FOND BLANC */
 .banner_title_background {
   margin-top: 250px;
   position: relative;
@@ -238,6 +345,7 @@ header {
   border-radius: 50px 50px 0 0;
 }
 
+/* Titre + coeur */
 .banner_title_background p {
   font-family: "Shrikhand", sans-serif;
   font-size: 40px;
@@ -265,6 +373,8 @@ header {
   transition-duration: 2000ms;
 }
 
+/* SECTION MENU */
+/* ENTREES */
 .footer {
   display: flex;
   justify-content: center;

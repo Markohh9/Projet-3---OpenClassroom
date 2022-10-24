@@ -20,6 +20,7 @@ header {
 
 /** Restaurants pages **/ 
 
+/* FOND BLANC */
 .banner_title_background {
     margin-top: 250px;
     position: relative;
@@ -27,6 +28,7 @@ header {
     border-radius: 50px 50px 0 0;
 }
 
+/* Titre + coeur */
 .banner_title_background p {
     font-family: $title-font;
     font-size: $title-size;
@@ -49,5 +51,8 @@ header {
         @include fonction-hover-hearts;
     }
 }
+
+/* SECTION MENU */
+/* ENTREES */
 
 
