@@ -10,6 +10,28 @@
 }
 
 
+.align-button {
+    @include no_style_href;
+    @include flex-center;
+    
+}
+
+.button_commande {
+
+    @include no_style_href;
+    @include flex-center;
+    font-family: $primary-font;
+    @include button-border;
+    width: 240px;
+    align-items: center;
+    margin-top: 40px;
+    
+
+    &:hover {
+    @include button-border-hover;
+    }
+}
+
 /*
 .searchbtn {
 
