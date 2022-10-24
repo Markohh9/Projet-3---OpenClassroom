@@ -148,6 +148,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 24px;
 }
 .item_container ol, .item_container ul {
   list-style: none;
@@ -157,7 +158,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  width: 300px;
+  width: 400px;
   height: 80px;
   border-radius: 15px;
   overflow: hidden;
@@ -178,6 +179,7 @@ html {
   font-weight: 600;
   text-overflow: ellipsis;
   overflow: hidden;
+  font-family: "Roboto", sans-serif;
 }
 .item_txt p {
   font-size: 16px;
@@ -186,12 +188,14 @@ html {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  font-family: "Roboto", sans-serif;
 }
 
 .item_price {
   display: flex;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
   font-weight: 600;
+  font-family: "Roboto", sans-serif;
 }
 
 .item_check {
@@ -223,6 +227,26 @@ html {
 
 .item_check, .item_txt, .item_price, i {
   transition: all 0.3s;
+}
+
+.item:hover {
+  transform: rotate(360deg);
+  transition-duration: 0.5s;
+  margin-right: 0px;
+}
+
+.item_check i {
+  transform: rotate(360deg);
+  transition-duration: 0.5s;
+  color: white;
+}
+
+.item:hover i {
+  transition: all 0.5s;
+}
+
+.item_check {
+  margin-right: 0px;
 }
 
 .fonctioncontainer h1 {

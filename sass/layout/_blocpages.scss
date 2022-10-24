@@ -127,6 +127,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 24px;
 
     ol, ul {
         list-style: none;
@@ -138,7 +139,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    width: 300px;
+    width: 400px;
     height: 80px;
     border-radius: 15px;
     overflow: hidden;
@@ -159,6 +160,7 @@
         font-weight: $strong-weight;
         text-overflow: ellipsis;
         overflow: hidden;
+        font-family: $primary-font;
     }
 
     p {
@@ -168,13 +170,15 @@
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
+        font-family: $primary-font;
     }
 }
 
 .item_price {
     display: flex;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
     font-weight: $strong-weight;
+    font-family: $primary-font;
 }
 
 .item_check {
@@ -213,4 +217,24 @@
 
 .item_check, .item_txt, .item_price, i {
     transition: all 0.3s;
+}
+
+.item:hover {
+    transform: rotate(360deg);
+    transition-duration: 0.5s;
+    margin-right: 0px;
+}
+
+.item_check i{
+    transform: rotate(360deg);
+    transition-duration: 0.5s;
+    color: white;
+}
+
+.item:hover i {
+    transition: all 0.5s;
+}
+
+.item_check  {
+    margin-right: 0px;
 }
