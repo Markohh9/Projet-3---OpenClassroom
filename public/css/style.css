@@ -172,13 +172,13 @@ html {
 }
 .item:hover .item_check i {
   transform: rotate(360deg);
-  transition-duration: 0.5;
+  transition-duration: 1;
 }
 .item:hover .item_check,
 .item:hover .item_txt,
 .item:hover .item_price,
 .item:hover i {
-  transition: all 0.5s;
+  transition: all 1s;
 }
 
 .item_txt {
@@ -211,6 +211,7 @@ html {
   margin-bottom: 20px;
   font-weight: 600;
   font-family: "Roboto", sans-serif;
+  padding-right: 8px;
 }
 
 .item_check {
@@ -598,7 +599,7 @@ header i:hover {
   top: 0;
   left: 0;
   position: fixed;
-  animation: loading 3s;
+  animation: loading 5s;
   animation-fill-mode: forwards;
 }
 

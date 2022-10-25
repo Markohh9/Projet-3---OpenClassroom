@@ -154,14 +154,14 @@
 
             i {
                 transform: rotate(360deg);
-                transition-duration: 0.5;
+                transition-duration: 1;
             }
         }
     .item_check,
     .item_txt,
     .item_price,
     i {
-        transition: all 0.5s;
+        transition: all 1s;
     }}
 }
 
@@ -179,6 +179,7 @@
         text-overflow: ellipsis;
         overflow: hidden;
         font-family: $primary-font;
+        
     }
 
     p {
@@ -197,6 +198,7 @@
     margin-bottom: 20px;
     font-weight: $strong-weight;
     font-family: $primary-font;
+    padding-right: 8px;
 }
 
 .item_check {
