@@ -240,6 +240,10 @@ html {
   animation: items-display 1.2s 0.4s forwards linear;
 }
 
+.fourth_item {
+  animation: items-display 1.2s 0.6s forwards linear;
+}
+
 .fonctioncontainer h1 {
   display: flex;
   justify-content: center;
