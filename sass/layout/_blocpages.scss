@@ -146,7 +146,23 @@
     border-radius: 15px;
     overflow: hidden;
     @include shadow;
-   /* opacity: 0; */
+    opacity: 0;
+    
+    &:hover {
+        .item_check {
+            margin-right: 0;
+
+            i {
+                transform: rotate(360deg);
+                transition-duration: 0.5;
+            }
+        }
+    .item_check,
+    .item_txt,
+    .item_price,
+    i {
+        transition: all 0.5s;
+    }}
 }
 
 .item_txt {
@@ -215,28 +231,4 @@
 
 .third_item {
     animation: items-display 1.2s 0.4s forwards linear;
-}
-
-.item_check, .item_txt, .item_price, i {
-    transition: all 0.3s;
-}
-
-.item:hover {
-    transform: rotate(360deg);
-    transition-duration: 0.5s;
-    margin-right: 0px;
-}
-
-.item_check i{
-    transform: rotate(360deg);
-    transition-duration: 0.5s;
-    color: white;
-}
-
-.item:hover i {
-    transition: all 0.5s;
-}
-
-.item_check  {
-    margin-right: 0px;
 }
