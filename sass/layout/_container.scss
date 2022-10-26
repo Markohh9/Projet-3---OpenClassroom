@@ -19,7 +19,15 @@
     @include column;
     @include flex-center;
     gap: 140px; 
+
+    @include desktop-only {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
 }
+
 
 .choicelist {
     @include column;

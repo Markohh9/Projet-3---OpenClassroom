@@ -277,3 +277,14 @@
     top: 0;
     right: 0;
 }
+
+
+// Responsive //
+
+@mixin mobile {
+    @media (max-width: 599px) { @content;}
+}
+
+@mixin tablet {
+    @media (min-width: 900px) { @content;}
+}

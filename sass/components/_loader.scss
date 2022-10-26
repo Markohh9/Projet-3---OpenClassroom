@@ -6,6 +6,8 @@
   position: fixed;
   animation: loading 5s;
   animation-fill-mode: forwards;
+  
+  @include desktop-only
 }
 
 .loading {
@@ -154,4 +156,3 @@
     animation: shadow $timing infinite;
   }
 }
-
