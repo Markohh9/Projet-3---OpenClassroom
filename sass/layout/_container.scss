@@ -4,6 +4,11 @@
         @include flex-center;
         @include padding_top_big;
         margin-bottom: 40px;
+
+        @include mobile {
+        margin-left: -160px;
+        }
+
     }
 
     h3 {
@@ -18,13 +23,12 @@
 .choice {
     @include column;
     @include flex-center;
-    gap: 140px; 
+    gap: 20px;
 
-    @include desktop-only {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: center;
+    @include mobile {
+    flex-direction: column;
+    margin-left: -40px;
+
     }
 }
 
@@ -35,6 +39,9 @@
     @include borderchoice;
     @include shadow;
 
+    @include mobile {
+        width: 360px;
+}
 
     p {
         @include gap_right;
@@ -43,6 +50,7 @@
         @include flex-center;
         font-family: $primary-font;
         color: $text-background;
+        
     }
 
    p:hover {
@@ -57,6 +65,13 @@
     i:hover {
         @include fonction-hover-txt;
     }
+}
+
+.responsiv {
+
+    @include mobile {
+        margin-left: 10px;
+        }
 }
 
 

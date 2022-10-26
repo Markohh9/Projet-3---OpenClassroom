@@ -282,9 +282,9 @@
 // Responsive //
 
 @mixin mobile {
-    @media (max-width: 599px) { @content;}
+    @media (max-width: 768px) {@content;}
 }
 
 @mixin tablet {
-    @media (min-width: 900px) { @content;}
+    @media (min-width: 992px) {@content;}
 }

@@ -13,8 +13,12 @@
 
         &:hover {
         @include fonction-hover;
-        
         }
+        @include mobile {
+            width: 280px;
+            margin-bottom: 40px;
+        }
+        
     }
 
     a { 

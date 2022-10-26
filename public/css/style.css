@@ -25,6 +25,11 @@ html {
   margin-top: 40px;
   padding-bottom: 20px;
 }
+@media (max-width: 768px) {
+  .restaurant_title h1 {
+    margin-left: -220px;
+  }
+}
 
 .restaurantcontainer {
   display: flex;
@@ -32,6 +37,12 @@ html {
   align-items: center;
   margin-left: 40px;
   margin-bottom: 60px;
+}
+@media (max-width: 768px) {
+  .restaurantcontainer {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 .restaurantcontainer a {
   color: inherit;
@@ -221,7 +232,7 @@ html {
   width: 60px;
   height: 100%;
   overflow: hidden;
-  margin-right: -60px;
+  margin-right: -62px;
   background-color: #99E2D0;
   border-radius: 0 15px 15px 0;
 }
@@ -252,6 +263,11 @@ html {
   padding-top: 40px;
   margin-bottom: 40px;
 }
+@media (max-width: 768px) {
+  .fonctioncontainer h1 {
+    margin-left: -160px;
+  }
+}
 .fonctioncontainer h3 {
   font-weight: 400;
 }
@@ -267,14 +283,12 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 140px;
+  gap: 20px;
 }
-@media screen and (min-width: 992px) {
+@media (max-width: 768px) {
   .choice {
-    display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
+    margin-left: -40px;
   }
 }
 
@@ -289,6 +303,11 @@ html {
   padding: 2px 20px 2px 20px;
   background-color: #f6f6f6;
   box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.47);
+}
+@media (max-width: 768px) {
+  .choicelist {
+    width: 360px;
+  }
 }
 .choicelist p {
   margin-right: 15px;
@@ -319,6 +338,12 @@ html {
   transform: scale(1);
   transition-duration: 2000ms;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .responsiv {
+    margin-left: 10px;
+  }
 }
 
 .decal {
@@ -352,17 +377,22 @@ header {
   padding: 30px 0 20px 0;
   box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2);
 }
-
-i {
+header i {
   margin-right: 60px;
   text-decoration: none;
   color: black;
 }
-i:hover {
+header i:hover {
   transform: scale(2);
   transition-duration: 600ms;
   cursor: pointer;
 }
+@media (max-width: 768px) {
+  header img {
+    width: 280px;
+  }
+}
+
 /** Restaurants pages **/
 /* FOND BLANC */
 .banner_title_background {
@@ -422,6 +452,12 @@ i:hover {
   transform: scale(1.2);
   transition-duration: 2000ms;
   cursor: pointer;
+}
+@media (max-width: 768px) {
+  .footer img {
+    width: 280px;
+    margin-bottom: 40px;
+  }
 }
 .footer a {
   padding-bottom: 20px;
@@ -486,6 +522,11 @@ i:hover {
   outline: none;
   background: transparent;
   padding: 28px;
+}
+@media (max-width: 768px) {
+  .search_input {
+    padding-left: 0;
+  }
 }
 
 .texttop h1 {

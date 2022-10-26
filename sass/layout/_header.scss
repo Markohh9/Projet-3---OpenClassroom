@@ -6,8 +6,7 @@ header {
     width: 100%;
     padding: 30px 0 20px 0;
     @include shadow-header;
-
-    }
+    
 
     i {
         margin-right: 60px;
@@ -17,10 +16,12 @@ header {
         &:hover{
             @include fonction-hover-arrow;
         }
-    
-    img {
-
     }
+        img {
+            @include mobile {
+                width: 280px;
+            }
+        }
 }
 
 

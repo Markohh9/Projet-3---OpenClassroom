@@ -3,7 +3,11 @@
     h1 {
         @include flex-center;
         margin-top: 40px;
-        @include paddingbottom;  
+        @include paddingbottom;
+
+        @include mobile {
+        margin-left: -220px;
+        }
     }
 
 }
@@ -12,6 +16,11 @@
     @include flex-center;
     margin-left: 40px;
     margin-bottom: 60px;
+
+    @include mobile {
+        flex-direction: column;
+        gap: 20px;
+}
 
     a { 
         color: inherit;
@@ -208,7 +217,7 @@
     width: 60px;
     height: 100%;
     overflow: hidden;
-    margin-right: -60px;
+    margin-right: -62px;
     background-color: $color-tertiary;
     border-radius: 0 15px 15px 0;
 

@@ -40,6 +40,11 @@
     outline: none;
     background: transparent;
     padding: 28px;
+
+    @include mobile {
+    padding-left: 0;
+
+    }
 }
 
 .texttop {
