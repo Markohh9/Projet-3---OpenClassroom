@@ -19,7 +19,8 @@ header {
     }
         img {
             @include mobile {
-                width: 280px;
+                width: 160px;
+                margin-left: -40px;
             }
         }
 }
@@ -43,6 +44,12 @@ header {
     font-size: $title-size;
     margin-top: 40px;
     margin-bottom: 40px;
+
+    @include mobile {
+        font-size: 30px;
+        margin-top: 36px;
+        margin-left: -22px;
+    }
 }
 
 .banner_title {
@@ -58,6 +65,10 @@ header {
 
     &:hover {
         @include fonction-hover-hearts;
+    }
+
+    @include mobile {
+        margin-left: 40px;
     }
 }
 

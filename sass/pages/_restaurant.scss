@@ -6,7 +6,9 @@
         @include paddingbottom;
 
         @include mobile {
-        margin-left: -220px;
+        margin-left: -180px;
+        margin-bottom: 8px;
+        margin-top: 60px;
         }
     }
 
@@ -25,6 +27,8 @@
     a { 
         color: inherit;
         text-decoration: inherit;
+        @include mobile {
+        }
         
 }
 
@@ -37,7 +41,6 @@
     @include size_img;
     @include border_cards_img;
     }
-
 }
 
 .bloc_restaurant_container {
@@ -100,6 +103,10 @@
     padding-top: 12px;
     padding-bottom: 24px;
     margin-top: 48px;
+
+    @include mobile {
+        margin-top: 80px
+    }
 }
 
 
@@ -130,6 +137,11 @@
         font: $primary-font;
         font-weight: $medium-weight;
         border-bottom: 4px solid $color-tertiary;
+
+        @include mobile {
+            margin-left: -188px;
+
+        }
     }
 }
 
@@ -247,3 +259,9 @@
 .fourth_item {
     animation: items-display 1.2s 0.6s forwards linear;
 }
+
+.first_item, .second_item, .third_item, .fourth_item { 
+    @include mobile {
+    width: 380px;
+    }
+} 

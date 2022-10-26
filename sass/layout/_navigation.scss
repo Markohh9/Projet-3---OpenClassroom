@@ -84,6 +84,12 @@
     padding-bottom: 24px;
 }
 
+.pnt {
+    @include mobile {
+margin-left: 60px;
+   }
+}
+
 /** Restaurants pages **/ 
 
 .restaurant_banner img {

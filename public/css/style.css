@@ -27,7 +27,9 @@ html {
 }
 @media (max-width: 768px) {
   .restaurant_title h1 {
-    margin-left: -220px;
+    margin-left: -180px;
+    margin-bottom: 8px;
+    margin-top: 60px;
   }
 }
 
@@ -129,6 +131,11 @@ html {
   padding-bottom: 24px;
   margin-top: 48px;
 }
+@media (max-width: 768px) {
+  .background-restaurant {
+    margin-top: 80px;
+  }
+}
 
 .menu_container {
   display: flex;
@@ -154,6 +161,11 @@ html {
   font: "Roboto", sans-serif;
   font-weight: 400;
   border-bottom: 4px solid #99E2D0;
+}
+@media (max-width: 768px) {
+  .title_menu_section h2 {
+    margin-left: -188px;
+  }
 }
 
 .item_container {
@@ -256,6 +268,12 @@ html {
   animation: items-display 1.2s 0.6s forwards linear;
 }
 
+@media (max-width: 768px) {
+  .first_item, .second_item, .third_item, .fourth_item {
+    width: 380px;
+  }
+}
+
 .fonctioncontainer h1 {
   display: flex;
   justify-content: center;
@@ -265,7 +283,9 @@ html {
 }
 @media (max-width: 768px) {
   .fonctioncontainer h1 {
-    margin-left: -160px;
+    margin-left: -120px;
+    margin-bottom: 35px;
+    margin-top: 24px;
   }
 }
 .fonctioncontainer h3 {
@@ -288,7 +308,7 @@ html {
 @media (max-width: 768px) {
   .choice {
     flex-direction: column;
-    margin-left: -40px;
+    margin-left: 0px;
   }
 }
 
@@ -340,12 +360,6 @@ html {
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
-  .responsiv {
-    margin-left: 10px;
-  }
-}
-
 .decal {
   margin-right: 10px;
 }
@@ -366,6 +380,12 @@ html {
   transform: scale(1.2);
   transition-duration: 2000ms;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .txt_p {
+    margin-left: 0px;
+  }
 }
 
 header {
@@ -389,7 +409,8 @@ header i:hover {
 }
 @media (max-width: 768px) {
   header img {
-    width: 280px;
+    width: 160px;
+    margin-left: -40px;
   }
 }
 
@@ -408,6 +429,13 @@ header i:hover {
   font-size: 40px;
   margin-top: 40px;
   margin-bottom: 40px;
+}
+@media (max-width: 768px) {
+  .banner_title_background p {
+    font-size: 30px;
+    margin-top: 36px;
+    margin-left: -22px;
+  }
 }
 
 .banner_title {
@@ -429,6 +457,11 @@ header i:hover {
   transform: scale(1.4);
   transition-duration: 2000ms;
 }
+@media (max-width: 768px) {
+  .heart_restaurant span {
+    margin-left: 40px;
+  }
+}
 
 /* SECTION MENU */
 /* ENTREES */
@@ -441,6 +474,12 @@ header i:hover {
   padding-top: 40px;
   border: 40px solid #353535;
   background-color: #353535;
+}
+@media (max-width: 768px) {
+  .footer {
+    align-items: baseline;
+    padding-top: 0;
+  }
 }
 .footer img {
   width: 10%;
@@ -455,14 +494,19 @@ header i:hover {
 }
 @media (max-width: 768px) {
   .footer img {
-    width: 280px;
-    margin-bottom: 40px;
+    margin-bottom: -60px;
+    width: 110px;
   }
 }
 .footer a {
   padding-bottom: 20px;
   padding-top: 10px;
   text-decoration: inherit;
+}
+@media (max-width: 768px) {
+  .footer a {
+    padding-bottom: 6px;
+  }
 }
 .footer i {
   margin-right: 15px;
@@ -568,6 +612,12 @@ header i:hover {
   background-color: #f6f6f6;
   padding-top: 24px;
   padding-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+  .pnt {
+    margin-left: 60px;
+  }
 }
 
 /** Restaurants pages **/

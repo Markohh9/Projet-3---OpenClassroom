@@ -4,6 +4,11 @@
     @include padding_top_big;
     @include background-footer;
 
+    @include mobile {
+        align-items: baseline;
+        padding-top: 0;
+    }
+
 
     img {
         width: 10%;
@@ -14,9 +19,10 @@
         &:hover {
         @include fonction-hover;
         }
+
         @include mobile {
-            width: 280px;
-            margin-bottom: 40px;
+            margin-bottom: -60px;
+            width: 110px;
         }
         
     }
@@ -25,6 +31,10 @@
         @include paddingbottom;
         @include padding_top;
         @include no_style_href;
+
+        @include mobile {
+            padding-bottom: 6px;
+        }
 }
 
     i {
