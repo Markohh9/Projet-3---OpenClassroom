@@ -651,6 +651,12 @@ header i:hover {
   animation: loading 5s;
   animation-fill-mode: forwards;
 }
+@media (max-width: 768px) {
+  .page_bloc {
+    width: 414px;
+  }
+}
+
 .loading {
   position: absolute;
   top: 0;
@@ -661,6 +667,11 @@ header i:hover {
   display: flex;
   justify-content: center;
   background: rgba(243, 243, 227, 0.8) 80%;
+}
+@media (max-width: 768px) {
+  .loading {
+    width: 414px;
+  }
 }
 
 @keyframes loading {

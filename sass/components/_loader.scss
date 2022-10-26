@@ -6,9 +6,11 @@
   position: fixed;
   animation: loading 5s;
   animation-fill-mode: forwards;
-  
-  @include desktop-only
+  @include mobile {
+    width: 414px;
+  }
 }
+
 
 .loading {
 
@@ -21,6 +23,10 @@
   display: flex;
   justify-content: center;
   background: rgba(243, 243, 227, 0.8) 80%;
+
+  @include mobile {
+    width: 414px;
+  }
 }
 
 @keyframes loading {
