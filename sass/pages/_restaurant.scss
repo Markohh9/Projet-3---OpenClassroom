@@ -28,6 +28,7 @@
         color: inherit;
         text-decoration: inherit;
         @include mobile {
+            width: 400px;
         }
         
 }
@@ -40,6 +41,9 @@
     img {
     @include size_img;
     @include border_cards_img;
+    @include mobile {
+        width: 360px;
+    }
     }
 }
 
@@ -64,6 +68,9 @@
     @include column;
     @include text_over_font;
     @include text_over_position;
+    @include mobile {
+        margin-left: 265px;
+    }
 }
 
 
@@ -87,6 +94,9 @@
     position: relative;
     top: -40px;
     right: -25px;
+    @include mobile {
+        right: 15px;
+    }
 }
 
 .icon-heart {

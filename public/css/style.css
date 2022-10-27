@@ -50,6 +50,11 @@ html {
   color: inherit;
   text-decoration: inherit;
 }
+@media (max-width: 768px) {
+  .restaurantcontainer a {
+    width: 400px;
+  }
+}
 .restaurantcontainer a:hover {
   cursor: pointer;
 }
@@ -57,6 +62,11 @@ html {
   width: 400px;
   height: 200px;
   border-radius: 20px 20px 20px 20px;
+}
+@media (max-width: 768px) {
+  .restaurantcontainer img {
+    width: 360px;
+  }
 }
 
 .bloc_restaurant_container {
@@ -89,6 +99,11 @@ html {
   margin-top: 15px;
   margin-left: 305px;
 }
+@media (max-width: 768px) {
+  .text_over {
+    margin-left: 265px;
+  }
+}
 
 .bloc_restaurant_container_txt {
   border: 0 solid none;
@@ -114,6 +129,11 @@ html {
   position: relative;
   top: -40px;
   right: -25px;
+}
+@media (max-width: 768px) {
+  .icon {
+    right: 15px;
+  }
 }
 
 .icon-heart {
