@@ -1,6 +1,9 @@
 
 html{
     overflow-x: hidden;
+    @include mobile {
+        width: 400px;
+    }
 }
 
 html { scroll-behavior: smooth;

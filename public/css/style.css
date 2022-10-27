@@ -13,6 +13,11 @@
 html {
   overflow-x: hidden;
 }
+@media (max-width: 768px) {
+  html {
+    width: 400px;
+  }
+}
 
 html {
   scroll-behavior: smooth;
@@ -27,7 +32,7 @@ html {
 }
 @media (max-width: 768px) {
   .restaurant_title h1 {
-    margin-left: -180px;
+    margin-left: -200px;
     margin-bottom: 8px;
     margin-top: 60px;
   }
@@ -53,6 +58,7 @@ html {
 @media (max-width: 768px) {
   .restaurantcontainer a {
     width: 400px;
+    margin-left: -10px;
   }
 }
 .restaurantcontainer a:hover {
@@ -303,7 +309,7 @@ html {
 }
 @media (max-width: 768px) {
   .fonctioncontainer h1 {
-    margin-left: -120px;
+    margin-left: -140px;
     margin-bottom: 35px;
     margin-top: 24px;
   }
@@ -328,7 +334,7 @@ html {
 @media (max-width: 768px) {
   .choice {
     flex-direction: column;
-    margin-left: 0px;
+    margin-left: -14px;
   }
 }
 
@@ -430,7 +436,6 @@ header i:hover {
 @media (max-width: 768px) {
   header img {
     width: 160px;
-    margin-left: -40px;
   }
 }
 
@@ -603,6 +608,11 @@ header i:hover {
   font-size: 40px;
   text-align: center;
 }
+@media (max-width: 768px) {
+  .texttop h1 {
+    font-size: 30px;
+  }
+}
 .texttop h2 {
   display: flex;
   align-items: center;
@@ -611,6 +621,11 @@ header i:hover {
   align-items: center;
   font-weight: 300;
   text-align: center;
+}
+@media (max-width: 768px) {
+  .texttop h2 {
+    font-size: 20px;
+  }
 }
 
 .align-button {
@@ -635,8 +650,8 @@ header i:hover {
 }
 
 @media (max-width: 768px) {
-  .pnt {
-    margin-left: 60px;
+  .iconepos_txt {
+    margin-left: 80px;
   }
 }
 
@@ -721,12 +736,6 @@ header i:hover {
   animation: loading 5s;
   animation-fill-mode: forwards;
 }
-@media (max-width: 768px) {
-  .page_bloc {
-    width: 414px;
-  }
-}
-
 .loading {
   position: absolute;
   top: 0;
@@ -738,12 +747,6 @@ header i:hover {
   justify-content: center;
   background: rgba(243, 243, 227, 0.8) 80%;
 }
-@media (max-width: 768px) {
-  .loading {
-    width: 414px;
-  }
-}
-
 @keyframes loading {
   0% {
     opacity: 1;

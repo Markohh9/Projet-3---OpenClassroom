@@ -7,7 +7,6 @@
   animation: loading 5s;
   animation-fill-mode: forwards;
   @include mobile {
-    width: 414px;
   }
 }
 
@@ -25,7 +24,6 @@
   background: rgba(243, 243, 227, 0.8) 80%;
 
   @include mobile {
-    width: 414px;
   }
 }
 

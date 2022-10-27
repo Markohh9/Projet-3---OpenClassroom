@@ -20,7 +20,6 @@ header {
         img {
             @include mobile {
                 width: 160px;
-                margin-left: -40px;
             }
         }
 }

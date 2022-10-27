@@ -6,7 +6,7 @@
         margin-bottom: 40px;
 
         @include mobile {
-        margin-left: -120px;
+        margin-left: -140px;
         margin-bottom: 35px;
         margin-top: 24px;
         }
@@ -29,7 +29,7 @@
 
     @include mobile {
     flex-direction: column;
-    margin-left: 0px;
+    margin-left: -14px;
 
     }
 }

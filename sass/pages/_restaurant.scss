@@ -6,7 +6,7 @@
         @include paddingbottom;
 
         @include mobile {
-        margin-left: -180px;
+        margin-left: -200px;
         margin-bottom: 8px;
         margin-top: 60px;
         }
@@ -29,6 +29,7 @@
         text-decoration: inherit;
         @include mobile {
             width: 400px;
+            margin-left: -10px;
         }
         
 }
