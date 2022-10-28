@@ -378,6 +378,11 @@ html {
   font-family: "Roboto", sans-serif;
   color: white;
 }
+@media (max-width: 768px) {
+  .choicelist p {
+    margin-left: -85px;
+  }
+}
 .choicelist p:hover {
   transform: scale(1);
   transition-duration: 2000ms;
@@ -397,12 +402,22 @@ html {
   margin-right: 10px;
 }
 
+@media (max-width: 768px) {
+  .c1 {
+    margin-left: 6px;
+  }
+}
 .c1 :hover {
   transform: scale(1.2);
   transition-duration: 2000ms;
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  .c2 {
+    margin-left: -8px;
+  }
+}
 .c2 :hover {
   transform: scale(1.2);
   transition-duration: 2000ms;
