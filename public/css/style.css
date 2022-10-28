@@ -341,7 +341,7 @@ html {
 @media (max-width: 768px) {
   .choice {
     flex-direction: column;
-    margin-left: -14px;
+    margin-left: 14px;
   }
 }
 
