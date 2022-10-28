@@ -7,6 +7,12 @@ header {
     padding: 30px 0 20px 0;
     @include shadow-header;
     
+    a {
+        @include mobile {
+            margin-left: -86px;
+            margin-right: 20px;
+        }
+    }
 
     i {
         margin-right: 60px;

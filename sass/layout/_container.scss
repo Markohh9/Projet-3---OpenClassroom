@@ -27,10 +27,14 @@
     @include flex-center;
     gap: 20px;
 
+    @include tablet {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
     @include mobile {
     flex-direction: column;
     margin-left: -14px;
-
     }
 }
 

@@ -24,6 +24,12 @@
         gap: 20px;
 }
 
+@include tablet {
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 40px;
+}
+
     a { 
         color: inherit;
         text-decoration: inherit;
