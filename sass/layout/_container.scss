@@ -91,6 +91,7 @@
     }
     :hover {
         @include fonction-hover;
+        background-color: #ffeefa;
     }
 }
 
@@ -100,12 +101,15 @@
     }
     :hover {
         @include fonction-hover;
+        background-color: #ffeefa;
+
     }
 }
 
 .c3 {
     :hover {
         @include fonction-hover;
+        background-color: #ffeefa;
     }
 }
 
