@@ -208,17 +208,52 @@
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    width: 85%;
+    width:100%;
+}
 
-    span {
-        font-size: 20px;
-        margin: 0 0 10px 10px;
-        font-weight: $strong-weight;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        font-family: $primary-font;
-        
-    }
+.p_txt {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+.txt_space_flex {
+    display:flex;
+    justify-content: space-between;
+}
+
+    .item_txt span {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    padding: 12px;
+    font-size: 20px;
+    width: 400px;
+    overflow: hidden;
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+    .item_txt span:hover {
+    animation:reduce;
+    animation-duration: 5s;
+    cursor: pointer;
+}
+    @keyframes reduce {
+    from {
+    min-width:400px;
+    max-width:400px;
+}
+    to {
+    min-width:200px;
+    max-width:200px;
+}
+}
+
+.p_txt
+    
 
     p {
         font-size: 16px;
@@ -227,28 +262,45 @@
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
+
         font-family: $primary-font;
     }
+
+.item_txt_bloc {
+    display: flex;
 }
 
 .item_price {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 4px;
     font-weight: $strong-weight;
     font-family: $primary-font;
     padding-right: 4px;
+    height: 100%;
+
+}
+
+.item_cart {
+    display: flex;
+    height: 100%;
+    align-self: flex-end;
+}
+
+.empty_bloc_txt {
+    position: absolute;
 }
 
 .item_check {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60px;
+    width: 80px;
     height: 100%;
     overflow: hidden;
-    margin-right: -62px;
-    background-color: $color-tertiary;
+    background-color: #99E2D0;
     border-radius: 0 15px 15px 0;
+    margin-left: 4px;
+
 
     i {
         color: white;
@@ -263,6 +315,7 @@
 
 .first_item {
     animation: items-display 1.2s forwards linear;
+    display: flex;
 }
 
 .second_item {
