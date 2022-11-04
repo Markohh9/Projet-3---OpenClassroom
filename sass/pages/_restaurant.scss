@@ -238,7 +238,8 @@
 }
     .item_txt span:hover {
     animation:reduce;
-    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
     cursor: pointer;
 }
     @keyframes reduce {
