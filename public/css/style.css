@@ -462,7 +462,7 @@ html {
   transform: scale(1.2);
   transition-duration: 2000ms;
   cursor: pointer;
-  background-color: #ffeefa;
+  background-color: #ffc7ec;
 }
 
 @media (max-width: 768px) {
@@ -474,14 +474,14 @@ html {
   transform: scale(1.2);
   transition-duration: 2000ms;
   cursor: pointer;
-  background-color: #ffeefa;
+  background-color: #ffc7ec;
 }
 
 .c3 :hover {
   transform: scale(1.2);
   transition-duration: 2000ms;
   cursor: pointer;
-  background-color: #ffeefa;
+  background-color: #ffc7ec;
 }
 
 @media (max-width: 768px) {
