@@ -151,7 +151,7 @@
 
 
     h2 {
-        font: $primary-font;
+        font-family: $primary-font;
         font-weight: $medium-weight;
         border-bottom: 4px solid $color-tertiary;
 
@@ -192,7 +192,7 @@
 
             i {
                 transform: rotate(360deg);
-                transition-duration: 1;
+                transition-duration: 1s;
             }
         }
     .item_check,
@@ -239,7 +239,7 @@
     .item_txt span:hover {
     animation:reduce;
     animation-iteration-count: 1;
-    animation-duration: 3s;
+    animation-duration: 5s;
     cursor: pointer;
 }
     @keyframes reduce {
@@ -295,7 +295,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80px;
+    width: 60px;
     height: 100%;
     overflow: hidden;
     background-color: #99E2D0;

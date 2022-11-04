@@ -118,7 +118,6 @@ html {
   background-color: white;
   margin-top: -20px;
   padding-left: 25px;
-  padding-bottom: -20px;
   height: 90px;
   display: flex;
   flex-direction: column;
@@ -185,7 +184,7 @@ html {
   justify-content: flex-start;
 }
 .title_menu_section h2 {
-  font: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   border-bottom: 4px solid #99E2D0;
 }
@@ -222,7 +221,7 @@ html {
 }
 .item:hover .item_check i {
   transform: rotate(360deg);
-  transition-duration: 1;
+  transition-duration: 1s;
 }
 .item:hover .item_check,
 .item:hover .item_txt,
@@ -268,7 +267,7 @@ html {
 .item_txt span:hover {
   animation: reduce;
   animation-iteration-count: 1;
-  animation-duration: 3s;
+  animation-duration: 5s;
   cursor: pointer;
 }
 
@@ -319,7 +318,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80px;
+  width: 60px;
   height: 100%;
   overflow: hidden;
   background-color: #99E2D0;
