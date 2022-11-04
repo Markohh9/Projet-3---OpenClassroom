@@ -177,7 +177,6 @@
 
 .item {
     display: flex;
-    justify-content: space-between;
     align-items: flex-end;
     width: 400px;
     height: 80px;
@@ -187,6 +186,7 @@
     opacity: 0;
     
     &:hover {
+        cursor: pointer;
         .item_check {
             margin-right: 0;
 
@@ -236,13 +236,17 @@
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+
     .item_txt span:hover {
-    animation:reduce;
+    animation:slide_check;
     animation-iteration-count: 1;
-    animation-duration: 5s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
     cursor: pointer;
 }
-    @keyframes reduce {
+
+
+    @keyframes slide_check {
     from {
     min-width:400px;
     max-width:400px;
@@ -253,16 +257,10 @@
 }
 }
 
-.p_txt
-    
-
-    p {
+.p_txt {
         font-size: 16px;
         margin-left: 10px;
         padding-bottom: 5px;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
 
         font-family: $primary-font;
     }
@@ -278,7 +276,6 @@
     font-family: $primary-font;
     padding-right: 4px;
     height: 100%;
-
 }
 
 .item_cart {

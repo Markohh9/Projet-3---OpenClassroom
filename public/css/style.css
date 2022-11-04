@@ -207,7 +207,6 @@ html {
 
 .item {
   display: flex;
-  justify-content: space-between;
   align-items: flex-end;
   width: 400px;
   height: 80px;
@@ -215,6 +214,9 @@ html {
   overflow: hidden;
   box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.47);
   opacity: 0;
+}
+.item:hover {
+  cursor: pointer;
 }
 .item:hover .item_check {
   margin-right: 0;
@@ -265,13 +267,14 @@ html {
 }
 
 .item_txt span:hover {
-  animation: reduce;
+  animation: slide_check;
   animation-iteration-count: 1;
-  animation-duration: 5s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
   cursor: pointer;
 }
 
-@keyframes reduce {
+@keyframes slide_check {
   from {
     min-width: 400px;
     max-width: 400px;
@@ -281,13 +284,10 @@ html {
     max-width: 200px;
   }
 }
-.p_txt p {
+.p_txt {
   font-size: 16px;
   margin-left: 10px;
   padding-bottom: 5px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
   font-family: "Roboto", sans-serif;
 }
 
